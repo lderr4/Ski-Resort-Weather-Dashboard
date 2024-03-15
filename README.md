@@ -23,6 +23,7 @@ A fully deployed ETL pipeline and dashboard so I can easily check the weather re
 ## Setup
 
 API Credentials:
+
 Go to https://openweathermap.org, make a free account, and save free API key.
 
 Setup Terraform Infrastructure:
@@ -34,6 +35,7 @@ terraform apply
 ```
 
 Inside Google Cloud Compute Instance .ssh tunnel:
+
 1. Run vm_setup script to install required technologies.
 2. Upload Google Cloud Credentials key into VM.
 3. Setup up Google Cloud credentials and .env file:
@@ -58,6 +60,7 @@ docker-compose up
 ```
 
 Getting access to the Mage Instance inside the Virtual Machine:
+
 1. Go to the Virtual Machine in Google Cloud Console.
 2. Network Interfaces --> nic0
 3. On the left-hand side click 'Firewall'
