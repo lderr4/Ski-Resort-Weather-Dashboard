@@ -59,7 +59,7 @@ docker build -t ski_resort_weather .
 docker-compose up
 ```
 
-Getting access to the Mage Instance inside the Virtual Machine:
+Getting external access to the Mage Instance inside the Virtual Machine:
 
 1. Go to the Virtual Machine in Google Cloud Console.
 2. Network Interfaces --> nic0
