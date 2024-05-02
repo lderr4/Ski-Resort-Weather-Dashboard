@@ -3,7 +3,7 @@
 
 [Link to Live Dashboard](https://lookerstudio.google.com/reporting/09bbe597-d530-4135-a1c4-fe7f2c9969ef) **UPDATE: due to reaching API call limit, the dashboard no longer shows weather forecasts (historical data still shown)**
 
-A fully deployed ETL pipeline and dashboard so I can easily check the weather report for my favorite ski resorts!
+A fully deployed ETL pipeline and dashboard so I can easily check the weather report for my favorite ski resorts! Additionally, there is a bulk weather pipeline that uses spark to transform a large dataset and put it directly into BigQuery!
 
 ## Architecture Diagram
 ![architecture_diagram.png](https://github.com/lderr4/Ski-Resort-Weather-Dashboard/blob/main/architecture_diagram.png)
