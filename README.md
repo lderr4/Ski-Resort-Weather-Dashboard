@@ -12,6 +12,7 @@ A fully deployed ETL pipeline and dashboard so I can easily check the weather re
 - Cloud - [Google Cloud Platform](https://cloud.google.com/)
 - Infrastructure as Code - [Terraform](https://www.terraform.io/)
 - Containerization - [Docker](https://www.docker.com/), [Docker Compose](https://www.docker.com/)
+- Large Scale Data Processing - [Spache Spark](https://spark.apache.org)
 - Orchestration - [Mage.ai](https://www.mage.ai)
 - Data Lake - [Google Cloud Storage](https://cloud.google.com/storage)
 - Data Warehouse - [BigQuery](https://cloud.google.com/bigquery)
@@ -54,11 +55,13 @@ POSTGRES_USER=
 POSTGRES_PASSWORD=
 POSTGRES_HOST=
 POSTGRES_PORT=
-OPENWEATHERMAP_API_KEY=" >> .env
+OPENWEATHERMAP_API_KEY=
+GCP_PROJECT_ID=" >> .env
 
-docker build -t ski_resort_weather .
 
-docker-compose up
+make build
+
+make run
 ```
 
 Getting external access to the Mage Instance inside the Virtual Machine:
