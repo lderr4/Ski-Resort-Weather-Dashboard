@@ -1,0 +1,57 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - transform_and_export_to_gcp_bucket_with_spark
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: download_dataset
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: download_dataset
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: transform_and_export_to_gcp_bucket_with_spark
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - download_dataset
+  uuid: transform_and_export_to_gcp_bucket_with_spark
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-24 01:39:04.103992+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: load_bulk_weather_in_spark
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: load_bulk_weather_in_spark
+variables_dir: /home/src/mage_data/ski_resort_weather
+widgets: []

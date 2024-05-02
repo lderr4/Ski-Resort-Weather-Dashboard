@@ -43,7 +43,7 @@ resource "google_compute_instance" "ski-resort-weather-vm" {
 
     initialize_params {
       image = "projects/debian-cloud/global/images/debian-12-bookworm-v20240213"
-      size  = 10
+      size  = 20
       type  = "pd-balanced"
     }
 
@@ -58,7 +58,7 @@ resource "google_compute_instance" "ski-resort-weather-vm" {
     goog-ec-src = "vm_add-tf"
   }
 
-  machine_type = "e2-standard-2"
+  machine_type = "e2-standard-4"
   name         = "instance-20240308-055708"
 
   network_interface {

@@ -27,6 +27,8 @@ conda --version
 echo "Running sudo apt-get update..."
 sudo apt-get update
 
+
+
 echo "Installing Docker..."
 sudo apt-get -y install docker.io
 
